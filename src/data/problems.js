@@ -1,0 +1,82 @@
+export const PROBLEMS = [
+  {
+    id: 1,
+    title: 'Two Sum',
+    difficulty: 'Easy',
+    category: 'Arrays',
+    tags: ['array', 'hash-map'],
+    acceptance: 89,
+    solved: true,
+    xp: 50,
+    description:
+      'Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.\n\nYou may assume that each input would have exactly one solution, and you may not use the same element twice.',
+    examples: [
+      { in: 'nums = [2,7,11,15], target = 9', out: '[0,1]' },
+      { in: 'nums = [3,2,4], target = 6', out: '[1,2]' },
+    ],
+    starter: 'function twoSum(nums, target) {\n  // Write your solution here\n  \n}',
+  },
+  {
+    id: 2,
+    title: 'Reverse String',
+    difficulty: 'Easy',
+    category: 'Strings',
+    tags: ['string', 'two-pointer'],
+    acceptance: 94,
+    solved: true,
+    xp: 40,
+    description:
+      'Write a function that reverses a string. The input string is given as an array of characters s.\nYou must do this by modifying the input array in-place with O(1) extra memory.',
+    examples: [{ in: 's = ["h","e","l","l","o"]', out: '["o","l","l","e","h"]' }],
+    starter: 'function reverseString(s) {\n  // Reverse in-place\n  \n}',
+  },
+  {
+    id: 3,
+    title: 'Valid Parentheses',
+    difficulty: 'Easy',
+    category: 'Stack',
+    tags: ['stack', 'string'],
+    acceptance: 78,
+    solved: true,
+    xp: 60,
+    description:
+      "Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.",
+    examples: [
+      { in: 's = "()"', out: 'true' },
+      { in: 's = "()[]{}"', out: 'true' },
+      { in: 's = "(]"', out: 'false' },
+    ],
+    starter: 'function isValid(s) {\n  \n}',
+  },
+  {
+    id: 4,
+    title: 'Merge Sorted Array',
+    difficulty: 'Easy',
+    category: 'Arrays',
+    tags: ['array', 'sorting'],
+    acceptance: 71,
+    solved: false,
+    xp: 55,
+    description:
+      'You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.',
+    examples: [{ in: 'nums1=[1,2,3,0,0,0], m=3, nums2=[2,5,6], n=3', out: '[1,2,2,3,5,6]' }],
+    starter: 'function merge(nums1, m, nums2, n) {\n  \n}',
+  },
+  {
+    id: 5,
+    title: 'Maximum Subarray',
+    difficulty: 'Medium',
+    category: 'DP',
+    tags: ['dynamic-programming', 'array'],
+    acceptance: 62,
+    solved: true,
+    xp: 100,
+    description:
+      "Given an integer array nums, find the subarray with the largest sum, and return its sum. This is the classic Kadane's Algorithm problem.",
+    examples: [
+      { in: 'nums = [-2,1,-3,4,-1,2,1,-5,4]', out: '6' },
+      { in: 'nums = [1]', out: '1' },
+    ],
+    starter: 'function maxSubArray(nums) {\n  \n}',
+  },
+];
